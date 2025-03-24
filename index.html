@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97fb84d5d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header"><b>Home</b></a></li>
+                    <li><a href="#about"><b>Sobre mi</b></a></li>
+                    <li><a href="#services"><b>Skils</b></a></li>
+                    <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#contact"><b>Contacto</b></a></li>
+                </ul>
+            </nav>
+            <div class="header-text"></div>
+            <h1>Hola, soy<span>Ivan Emanuel Diaz Medina</span><br>Desarrollo de Software Multiplataforma</h1>
+        </div>
+    </div> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/foto.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Soy un desarrollador de software multiplataforma con experiencia en la creación de aplicaciones web, móviles y de escritorio. Me apasiona la integración de tecnologías y la resolución de problemas a través del código.
+
+                        Además, tengo conocimientos en Internet de las Cosas (IoT), lo que me permite conectar hardware y software para desarrollar soluciones innovadoras. Mi enfoque se basa en la eficiencia, la escalabilidad y la experiencia del usuario.</p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experiencia</p>
+                    <p class="tab-links"onclick="opentab('education')">Educacion </p>
+                </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <p>HTML</p>
+                        <div class="barr">
+                        <div class="skills html">70%</div>
+                        </div>
+                        <p>SQL</p>
+                        <div class="barr">
+                        <div class="skills sql">50%</div>
+                        </div>
+                        <p>React</p>
+                        <div class="barr">
+                        <div class="skills react">30%</div>
+                        </div>
+                        <p>IoT</p>
+                        <div class="barr">
+                        <div class="skills iot">60%</div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Mochila inteligente.</li>
+                        <li><span>2023</span><br>Tienda de libros.</li>
+                        <li><span>2025</span><br>Seguridad en entrada y salida de fracionamiento.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>2025</span><br>UTVT TSU Desarrollo de Software Multiplataforma 5to </li>
+                        <li><span>2021</span><br>CBT No.3 LERMA Tecnico en Mecatronica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desarrollo Web</h2>
+                    <p>Me especializo en el desarrollo de sitios web dinámicos y robustos, con pasión por la excelencia. Con un dominio experto de HTML, CSS y JavaScript, creo soluciones web responsivas y escalables, adaptadas a tus necesidades. Colaboremos para hacer realidad tu visión con sitios web innovadores y fáciles de usar que destaquen en el panorama digital. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Desarrollo e Integración de APIs</h2>
+                    <p>Diseño y desarrollo de APIs RESTful para conectar sistemas de manera eficiente. Integración de servicios externos y manejo de bases de datos..</p>
+                  
+                </div>
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Internet de las Cosas (IoT)</h2>
+                    <p>Me especioalizo en conexión de hardware y software mediante Arduino, ESP32 y sensores. Envío y procesamiento de datos en la nube con APIs y bases de datos. Automatización de procesos y control de dispositivos en tiempo real..</p>
+                 
+                </div>  
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/carrito.jpeg">
+                <div class="layer">
+                    <h3>Carrito </h3>
+                    <p>Se desarrollo un carrito con js</p>
+                    <a href="https://recetas-web-sp31.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+               
+            </div>
+            <div class="work">
+                <img src="images/recetas.jpeg">
+                <div class="layer">
+                    <h3>Pagina con Api</h3>
+                    <p> Se desarrollo una pagina web integreada con una api de recetas</p>
+                    <a href="https://carrito-one.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             
+            </div>
+            <div class="work">
+                <img src="images/js.webp">
+                <div class="layer">
+                    <h3>Login con JS</h3>
+                    <p>  Se desarrollo una login con JS. </p>
+                    <a href="https://login-en-js-jet.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:al222110809@gmail.com" class="link">al222110809@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> 722 178 2190</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ivan-emanuel-d%C3%ADaz-medina-b86595307?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/1BZGrVtMNb/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_pit_zajot?igsh=a2J4NXY0d3lxMWNt"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    <a href="images/new 2 resume suryansh.pdf" download class= "btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxbbbsb6ftUm0HIO1yWDn7VXevFOmyCKvdp4R6tpbOEeXs9e8DTmqLAYUMm8N-VtByd/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body> 
+ </html>
